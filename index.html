@@ -1,0 +1,81 @@
+<!--
+    create a page where one text is on the left of the page 
+    and the other text is on the right but both texts are
+     centered vertically, ChatGPT
+
+     https://www.w3schools.com/cssref/tryit.php?filename=trycss_zindex
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Nunito:wght@600&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <span class="question-mark" id="question">?</span>
+    <div id="homepage">
+        
+
+        <div id="container" class="container">
+           
+            <div class="left-text">
+                
+              <p> <span class="txt-create">Create</span> WITH RANDOM( )</p>
+            </div>
+           
+                <input id="start" type="button" class="button" value="START">
+                
+        </div>
+
+        <div id= "form1"  > 
+            <br><br><br> 
+            <div id="container-from">
+                <p id="text-form">provide a number between 1 and 10</p>
+
+            </div>
+            <br><br>
+            <input required id = "vertices" type="number"  min="1" max="10" />
+            <ul id="rgb-values">
+                <label>R:</label>
+                <input required id = "r" type="number"  min="0" max="255" />
+                <br> <br>  
+                <label>G:</label>
+                <input required id = "g" type="number"  min="0" max="255" />
+                <br> <br> 
+                <label>B:</label>
+                <input required id = "b" type="number"  min="0" max="255" />
+              </ul>
+              
+            <br>
+            <input type="button" id="firstForm" class="button-form" value="NEXT">
+        </div>
+
+
+    </div>
+    <canvas id="mesh-gradient"></canvas>
+
+    <div id="shape-area">
+        <canvas id="shapeCanvas" width="500" height="500">
+        
+           
+        </canvas>
+    </div>
+
+    <div id="shape-text" style="  font-family: 'Nunito', sans-serif">
+        <p >CLICK ON THE LEFT TO MAKE SHAPE APPEAR</p>
+    </div>
+ 
+
+   
+
+    
+</body>
+<script type ="text/javascript" src = "script.js"> </script>
+</html>
